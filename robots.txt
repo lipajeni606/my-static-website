@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 指向站点地图（请替换为你的实际域名）
+Sitemap: https://yourdomain.com/sitemap.xml

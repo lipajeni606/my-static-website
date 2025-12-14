@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>新聞列表 - 享閱頭條</title>
+        <meta name="description" content="新聞列表 — 即時新聞匯總，分類瀏覽經濟、科技、文化、體育、健康等主題。點擊閱讀詳情。">
+        <link rel="canonical" href="https://yourdomain.com/news.html" />
+        <!-- Open Graph / Social -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="新聞列表 - 享閱頭條" />
+        <meta property="og:description" content="新聞列表 — 即時新聞匯總，分類瀏覽經濟、科技、文化等主題。" />
+        <meta property="og:image" content="https://yourdomain.com/images/og-news.jpg" />
+        <meta property="og:url" content="https://yourdomain.com/news.html" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="新聞列表 - 享閱頭條" />
+        <meta name="twitter:description" content="新聞列表 — 即時新聞匯總，分類瀏覽。" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Google tag (gtag.js) - measurement ID 应替换为你自己的 ID -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XPZLL5KBY"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);} 
+            gtag('js', new Date());
+            gtag('config', 'G-9XPZLL5KBY');
+        </script>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <h1>享閱頭條</h1>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="搜尋新聞...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> 首頁</a></li>
+                        <li><a href="news.html" class="active"><i class="fas fa-newspaper"></i> 新聞</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> 關於我們</a></li>
+                        <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> 隱私條款</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="news-container">
+            <aside class="sidebar">
+                <div class="category-filter">
+                    <h3>新聞分類</h3>
+                    <ul>
+                        <li><a href="news.html?category=all" class="active">全部新聞</a></li>
+                        <li><a href="news.html?category=politics">政治</a></li>
+                        <li><a href="news.html?category=economy">經濟</a></li>
+                        <li><a href="news.html?category=tech">科技</a></li>
+                        <li><a href="news.html?category=culture">文化</a></li>
+                        <li><a href="news.html?category=sports">體育</a></li>
+                        <li><a href="news.html?category=health">健康</a></li>
+                    </ul>
+                </div>
+                
+                <div class="popular-news">
+                    <h3>熱門新聞</h3>
+                    <ul>
+                        <li><a href="te-ai-28/">人工智慧在醫療領域取得重大突破</a></li>
+                        <li><a href="news-detail.html?id=6">2025年全國兩會重點議題解讀</a></li>
+                        <li><a href="news-detail.html?id=7">中國航天再創佳績：探月工程第四階段啟動</a></li>
+                        <li><a href="news-detail.html?id=8">全國大學生創新創業大賽圓滿落幕</a></li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <section class="news-list">
+                <div class="news-header">
+                    <h2>最新新聞</h2>
+                    <div class="news-filter">
+                        <span>排序方式：</span>
+                        <select>
+                            <option>最新發布</option>
+                            <option>熱門程度</option>
+                            <option>相關程度</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <article class="news-item">
+                    <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=300&fit=crop" alt="新聞圖片" class="news-thumbnail">
+                    <div class="news-content">
+                        <h3><a href="ec-gd-45/">中國經濟穩步增長，第三季度GDP增速達6.5%</a></h3>
+                        <p class="news-meta">2025年9月25日 | 經濟 | 記者：李明</p>
+                        <p>國家統計局今日發布最新經濟數據，顯示今年第三季度國內生產總值同比增長6.5%，超出市場預期。專家分析認為，這一增長得益於國內消費市場的強勁復甦和產業結構的持續優化...</p>
+                        <a href="ec-gd-45/" class="read-more">閱讀全文</a>
+                    </div>
+                </article>
+                
+                <article class="news-item">
+                    <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=400&h=300&fit=crop" alt="新聞圖片" class="news-thumbnail">
+                    <div class="news-content">
+                        <h3><a href="news-detail.html?id=2">新能源汽車銷量創歷史新高，市場份額突破30%</a></h3>
+                        <p class="news-meta">2025年9月24日 | 科技 | 記者：王華</p>
+                        <p>據中國汽車工業協會最新數據，今年前三季度新能源汽車銷量已突破500萬輛，市場份額首次超過30%。多位行業專家表示，這一數據表明我國新能源汽車產業已進入快速發展階段，電動化轉型正在加速推進...</p>
+                        <a href="news-detail.html?id=2" class="read-more">閱讀全文</a>
+                    </div>
+                </article>
+                
+                <article class="news-item">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="新聞圖片" class="news-thumbnail">
+                    <div class="news-content">
+                        <h3><a href="news-detail.html?id=3">全國教育改革新政策出台，減輕學生課業負擔</a></h3>
+                        <p class="news-meta">2025年9月23日 | 教育 | 記者：張偉</p>
+                        <p>教育部今日發布《關於進一步減輕義務教育階段學生課業負擔的指導意見》，提出一系列具體措施。新政策強調素質教育，鼓勵學校開展多樣化課外活動，培養學生綜合能力和創新思維...</p>
+                        <a href="news-detail.html?id=3" class="read-more">閱讀全文</a>
+                    </div>
+                </article>
+                
+                <article class="news-item">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop" alt="新聞圖片" class="news-thumbnail">
+                    <div class="news-content">
+                        <h3><a href="news-detail.html?id=4">第十屆世界互聯網大會在烏鎮開幕，聚焦數字經濟</a></h3>
+                        <p class="news-meta">2025年9月22日 | 科技 | 記者：陳靜</p>
+                        <p>第十屆世界互聯網大會今日在浙江烏鎮開幕，來自全球100多個國家和地區的政府代表、企業領袖和專家學者參會。本屆大會以「共建網絡空間命運共同體，攜手構建數字文明」為主題，將圍繞數字經濟、人工智慧治理等熱點議題展開深入討論...</p>
+                        <a href="news-detail.html?id=4" class="read-more">閱讀全文</a>
+                    </div>
+                </article>
+                
+                
+                <article class="news-item">
+                    <div class="news-content">
+                        <h3><a href="en-work-yb/">How AI is Reshaping Traditional Jobs: Opportunities and Challenges</a></h3>
+                        <p class="news-meta">2025-10-15 | Technology | <span class="badge">English</span></p>
+                        <p>Read our latest in-depth analysis on how Artificial Intelligence is impacting the global workforce and what the future holds for employment...</p>
+                        <a href="en-work-yb/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            
+                <article class="news-item">
+                    <div class="news-content">
+                        <h3><a href="en-future-qh/">Will AI Cause Mass Unemployment? Experts Weigh In on the Future of Labor</a></h3>
+                        <p class="news-meta">2025-10-15 | Technology | <span class="badge">English</span></p>
+                        <p>Read our latest in-depth analysis on how Artificial Intelligence is impacting the global workforce and what the future holds for employment...</p>
+                        <a href="en-future-qh/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">下一頁 &raquo;</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>享閱頭條</h2>
+                    <p>傳遞真實，洞察世界</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>快速連結</h3>
+                        <ul>
+                            <li><a href="index.html">首頁</a></li>
+                            <li><a href="news.html">新聞</a></li>
+                            <li><a href="about.html">關於我們</a></li>
+                            <li><a href="privacy.html">隱私條款</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h3>新聞分類</h3>
+                        <ul>
+                            <li><a href="news.html?category=politics">政治</a></li>
+                            <li><a href="news.html?category=economy">經濟</a></li>
+                            <li><a href="news.html?category=tech">科技</a></li>
+                            <li><a href="news.html?category=culture">文化</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h3>聯絡我們</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> 香港九龍觀塘開源道60號駱駝漆大廈3座8樓</li>
+                            <li><i class="fas fa-phone"></i> +852 3955-3688</li>
+                            <li><i class="fas fa-envelope"></i> contact@xiangyuetoutiao.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 享閱頭條 版權所有</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
